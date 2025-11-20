@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # 或 master，根据你的主分支名称
+  workflow_dispatch:
+
 
 # 设置 GITHUB_TOKEN 的权限
 permissions:
