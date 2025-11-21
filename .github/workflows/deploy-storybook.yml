@@ -39,7 +39,7 @@ jobs:
           yarn config set npmRegistryServer https://registry.npmjs.org
       
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
       
       - name: Build Storybook
         run: yarn build-storybook
