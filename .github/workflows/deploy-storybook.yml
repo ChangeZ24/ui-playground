@@ -31,6 +31,12 @@ jobs:
         with:
           node-version: '20'
           cache: 'yarn'
+          registry-url: 'https://registry.npmjs.org'
+      
+      - name: Configure yarn to use official registry
+        run: |
+          yarn config set registry https://registry.npmjs.org
+          yarn config set npmRegistryServer https://registry.npmjs.org
       
       - name: Install dependencies
         run: yarn install --frozen-lockfile
